@@ -4,7 +4,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-
+//modified code by subash
 public class TakeSs {
 
 	public static void main(String[] args) throws Throwable
@@ -17,7 +17,8 @@ public class TakeSs {
 		File s=tk.getScreenshotAs(OutputType.FILE);
 		File d=new File("C:\\Users\\hp\\seleniumNew\\SeleniumPracti\\out.png");
 		FileUtils.copyFile(s, d);
-		
+		driver.quit();
 	}
+	
 
 }
